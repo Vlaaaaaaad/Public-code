@@ -2,23 +2,28 @@ Public-code
 ===========
 
 Bits and pieces of code written at Uni, available for public access
+-------------------------------------------------------------------
 
-automata.c - Buids a deterministic automata and checks if given words are accepted or not
+**automata.c** - Buids a deterministic automata and checks if given words are accepted or not
 
-BFS.cpp, DFS.cpp, BFS_DFS.java - DFS and BFS implementation
+**BFS.cpp, DFS.cpp** - BFS and DFS implementation in C++
 
-DiceThrows.java - If you throw a n-sided dice X times, how many times will each possible combination of sums appear?
+**BFS_DFS.java** - BFS and DFS implementation in Java
 
-doubly_linked_list.c - a doubly-linked list implementation
+**DiceThrows.java** - If you throw a n-sided dice X times, how many times will each possible combination of sums appear?
 
-hangman.c - A Hangman game implementation. Has as input files domains that have 10 words each. Player can chose the domain for the word that has to be guessed
+**doubly_linked_list.c** - a doubly-linked list implementation
 
-linked_list.c - a linked list implementation
+**hangman.c** - A Hangman game implementation. Has as input files domains that have 10 words each. Player can chose the domain for the word that has to be guessed
 
-min_max_vector.c - gets the minimum and maximum value from a vector, using minimal number of comparisons
+**linked_list.c** - a linked list implementation
 
-poli.c - calculates the sum of two polynomials
+**min_max_vector.c** - gets the minimum and maximum value from a vector, using minimal number of comparisons
 
-queue.c - a queue implementation
+**poli.c** - calculates the sum of two polynomials
 
-stack.c - a stack implementation
+**queue.c** - a queue implementation
+
+**stack.c** - a stack implementation
+
+**list_files.c** - an implementation of `tree /f` from DOS. Recursively lists all directories and files from a parent directory given as a command line argument
