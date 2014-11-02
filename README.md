@@ -1,8 +1,7 @@
 Public-code
 ===========
 
-Bits and pieces of code written at Uni, available for public access
--------------------------------------------------------------------
+###Bits and pieces of code written at Uni, available for public access
 
 **automata.c** - Buids a deterministic automata and checks if given words are accepted or not
 
