@@ -16,7 +16,7 @@ struct i_have_no_idea_for_a_name
 //--------------------------------------------------------------------------------------------------------------------//
 
 void menu()
-{	
+{
 	// How do you say hangman in Romanian? Answer:
 	printf("\n\n");
 	printf("\n #####                                                                                            ");
@@ -151,7 +151,7 @@ void dude(int step)
 {
 	switch(step)
 	{
-		case 1: 
+		case 1:
 		{
 			printf("\n  +---+ ");
 			printf("\n  |   | ");
@@ -163,23 +163,23 @@ void dude(int step)
 			break;
 		};
 
-		case 2: 
-		{
-			printf("\n  +---+ ");
-			printf("\n  |   | ");
-			printf("\n  O   | ");
-			printf("\n      | ");
-			printf("\n      | ");
-			printf("\n      | ");
-			printf("\n======== ");
-			break;
-		};
-
-		case 3: 
+		case 2:
 		{
 			printf("\n  +---+ ");
 			printf("\n  |   | ");
 			printf("\n  O   | ");
+			printf("\n      | ");
+			printf("\n      | ");
+			printf("\n      | ");
+			printf("\n======== ");
+			break;
+		};
+
+		case 3:
+		{
+			printf("\n  +---+ ");
+			printf("\n  |   | ");
+			printf("\n  O   | ");
 			printf("\n  |   | ");
 			printf("\n      | ");
 			printf("\n      | ");
@@ -188,7 +188,7 @@ void dude(int step)
 
 		};
 
-		case 4: 
+		case 4:
 		{
 			printf("\n  +---+ ");
 			printf("\n  |   | ");
@@ -200,7 +200,7 @@ void dude(int step)
 			break;
 		};
 
-		case 5: 
+		case 5:
 		{
 			printf("\n  +---+ ");
 			printf("\n  |   | ");
@@ -212,7 +212,7 @@ void dude(int step)
 			break;
 		};
 
-		case 6: 
+		case 6:
 		{
 			printf("\n  +---+ ");
 			printf("\n  |   | ");
@@ -224,7 +224,7 @@ void dude(int step)
 			break;
 		};
 
-		case 7: 
+		case 7:
 		{
 			printf("\n  +---+ ");
 			printf("\n  |   | ");

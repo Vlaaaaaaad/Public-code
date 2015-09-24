@@ -12,7 +12,7 @@ struct node
 
 //--------------------------------------------------------------------------------------------------------------------//
 
-void add_node(int i, int coeficient, int grad) 
+void add_node(int i, int coeficient, int grad)
 {
 	if ( first[i] == NULL)
 	{
@@ -21,7 +21,7 @@ void add_node(int i, int coeficient, int grad)
 		first[i] -> grade = grad;
 		first[i] -> coefficient = coeficient;
 		first[i] -> next = NULL;
-		
+
 		last[i] = first[i];
 	}
 
@@ -76,7 +76,7 @@ void add(int i, int j)
 			add_node(3, current1 -> coefficient, current1 -> grade);
 			current1 = current1 ->next;
 		}
-			
+
 		if(current1 -> grade < current2 -> grade)
 		{
 			add_node(3, current2 -> coefficient, current2 -> grade);
@@ -109,7 +109,7 @@ int main()
 	{
 		printf("What is the coefficient of X ^ %d? ", i);
 		scanf("%d", &coef);
-		
+
 		if(coef != 0)
 			add_node(1, coef, i);
 	}
@@ -121,7 +121,7 @@ int main()
 	{
 		printf("What is the coefficient of X ^ %d? ", i);
 		scanf("%d", &coef);
-		
+
 		if(coef != 0)
 			add_node(2, coef, i);
 	}

@@ -9,11 +9,11 @@ using namespace std;
 class Graph
 {
 	int V; // No of nodes
-	list<int> *adj; // Adjacency list 
+	list<int> *adj; // Adjacency list
 public:
 	Graph(int V); // Constructor
 
-	void addEdge(int v, int w); 
+	void addEdge(int v, int w);
 	void BFS(int s); // BFS from node S
 };
 

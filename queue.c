@@ -12,7 +12,7 @@ struct node
 
 //--------------------------------------------------------------------------------------------------------------------//
 
-void push(int x) 
+void push(int x)
 {
 	if ( first == NULL)
 	{
@@ -20,21 +20,21 @@ void push(int x)
 
 		first -> value = x;
 		first -> next = NULL;
-		
+
 		last = first;
 	}
 
 	else
 	{
 		struct node *p;
-		
+
 		p = malloc( sizeof (struct node) );
-		
+
 		last -> next = p;
-		
+
 		p -> value = x;
 		p -> next = NULL;
-		
+
 		last = p;
 	}
 }
@@ -50,12 +50,12 @@ int pop()
 	x = first -> value;
 
 	temp = first -> next;
-	
+
 	free(first);
 
 	first = temp;
 
-	return x;	
+	return x;
 }
 
 //--------------------------------------------------------------------------------------------------------------------//
@@ -81,25 +81,25 @@ int search(int x)
 {
 	int ct;
 	struct node *current;
-	
+
 	ct = 0;
 	current = first;
 
 	while( current)
 	{
 		ct++;
-		if (current -> value == x) 
+		if (current -> value == x)
 			return ct;
 		current = current -> next;
 	}
-	
+
 	return -1;
 }
 
 //--------------------------------------------------------------------------------------------------------------------//
 
 void show()
-{	
+{
 	struct node *current;
 
 	current = first;
@@ -141,26 +141,26 @@ int main()
 
 		switch(opt)
 		{
-			case 1: 
-			{ 
-				printf("\n \n Insert the number you would like to add to the queue. \n"); 
+			case 1:
+			{
+				printf("\n \n Insert the number you would like to add to the queue. \n");
 				scanf("%d", &x);
 				push(x);
 				break;
 			};
-			
+
 			case 2:
 			{
 				printf("Pop: %d.", pop());
 				break;
 			};
-			
+
 			case 3:
 			{
 				printf("Peek: %d.", peek());
 				break;
 			};
-			
+
 			case 4:
 			{
 				if(empty() == true)
@@ -169,7 +169,7 @@ int main()
 					printf("\n The queue is not empty.");
 				break;
 			};
-			
+
 			case 5:
 			{
 				printf("\n Insert the element you would like to search for.\n");
@@ -178,7 +178,7 @@ int main()
 				printf("%d", search(x));
 				break;
 			};
-			
+
 			case 6:
 			{
 				show();
@@ -187,7 +187,7 @@ int main()
 		};
 
 	}while( opt != 0);
-	
-	scanf("%*c");	
+
+	scanf("%*c");
 	return 0;
 }

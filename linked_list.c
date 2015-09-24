@@ -59,7 +59,7 @@ int searchPos(int x) // 5c)
 {
 	int ct;
 	struct node *current;
-	
+
 	ct = 0;
 	current = first;
 
@@ -69,7 +69,7 @@ int searchPos(int x) // 5c)
 		if (current -> value == x) return ct;
 		current = current -> next;
 	}
-	
+
 	return 0;
 }
 
@@ -82,7 +82,7 @@ void remove_node(int x) // 5d)
 
 	int alfa;
 	alfa = 0;
-	
+
 	current = first;
 
 	if ( first -> value == x)
@@ -103,7 +103,7 @@ void remove_node(int x) // 5d)
 				alfa = 1;
 			}
 
-			current = current ->  next;	
+			current = current ->  next;
 
 		} while (current != last && alfa == 0);
 

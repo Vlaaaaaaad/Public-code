@@ -15,13 +15,13 @@ public class BFS_DFS
 		System.out.println("Insert the node you would like the DFS to start from.");
 
 		n = sc.nextInt();
-		
+
 		T.DFS(n);
 
 		System.out.println("Insert the node you would like the BFS to start from.");
 
 		n = sc.nextInt();
-		
+
 		T.BFS(n);
 
 		sc.close();
@@ -92,7 +92,7 @@ class Graph
 		// let's also show a check, just to be sure
 
 		System.out.println("A graph with the following adjacency list has been read and initialized:");
-		
+
 		for(int o = 1; o <= V; o++)
 			System.out.println(adj[o]);
 	}
@@ -130,7 +130,7 @@ class Graph
 
 	void BFS(int v) throws Exception
 	{
-		Integer s; 
+		Integer s;
 		PrintWriter pw2 = new PrintWriter("BFS.txt");
 
 		boolean[] visited = new boolean[V + 1];

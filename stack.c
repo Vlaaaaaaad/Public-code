@@ -42,9 +42,9 @@ int pop()
 {
 	struct node *current, *temp;
 	int x;
-	
+
 	current = first;
-	
+
 	x = last -> value;
 
 	while(current -> next -> next)
@@ -53,9 +53,9 @@ int pop()
 	}
 
 	current -> next = NULL;
-	
+
 	free(last);
-	
+
 	last = current;
 
 	return x;
@@ -84,19 +84,19 @@ int search(int x)
 {
 	int ct;
 	struct node *current;
-	
+
 	current = first;
 
 	while( current)
 	{
 		ct++;
-		
-		if (current -> value == x) 
+
+		if (current -> value == x)
 			return ct;
-		
+
 		current = current -> next;
 	}
-	
+
 	return -1;
 }
 
@@ -144,26 +144,26 @@ int main()
 
 		switch(opt)
 		{
-			case 1: 
-			{ 
-				printf("\n \n Insert the number you would like to be added to the stack. \n"); 
+			case 1:
+			{
+				printf("\n \n Insert the number you would like to be added to the stack. \n");
 				scanf("%d", &x);
 				push(x);
 				break;
 			};
-			
+
 			case 2:
 			{
 				printf("Pop: %d.", pop());
 				break;
 			};
-			
+
 			case 3:
 			{
 				printf("Peek: %d.", peek());
 				break;
 			};
-			
+
 			case 4:
 			{
 				if(empty() == true)
@@ -172,7 +172,7 @@ int main()
 					printf("\n The stack is not empty.");
 				break;
 			};
-			
+
 			case 5:
 			{
 				printf("\n Insert the number you would like to search.\n");
@@ -181,7 +181,7 @@ int main()
 				printf("%d", search(x));
 				break;
 			};
-			
+
 			case 6:
 			{
 				show();
@@ -190,7 +190,7 @@ int main()
 		};
 
 	}while( opt != 0);
-	
+
 	scanf("%*c");
 	return 0;
 }

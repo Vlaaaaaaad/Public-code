@@ -94,7 +94,7 @@ void add_inside(int x, int y) // inserts x after y
 		if(current -> value == y)
 		{
 			p = malloc( sizeof (struct node) );
-			
+
 			p -> value = x;
 			p -> prev = current;
 			p -> next = current -> next;
@@ -203,7 +203,7 @@ void delete_value(int x)
 
 	int done;
 	done = 0;
-	
+
 	current = first;
 
 	if ( first -> value == x)
@@ -232,7 +232,7 @@ void delete_value(int x)
 
 				done = 1;
 			}
-		
+
 		} while (current != last && done == 0);
 	}
 
@@ -275,7 +275,7 @@ int main()
 			{
 				printf("\n\nInsert the value you would like to be added at the beginning of the list.\n");
 				scanf("%d", &x);
-				
+
 				add_beginning(x);
 				break;
 			};
@@ -284,7 +284,7 @@ int main()
 			{
 				printf("\n\nInsert the value you would like to be added at the end of the list.\n");
 				scanf("%d", &x);
-				
+
 				add_end(x);
 				break;
 			};
@@ -295,7 +295,7 @@ int main()
 				scanf("%d", &y);
 				printf("\n\nInsert the value you would like to be added.\n");
 				scanf("%d", &x);
-				
+
 				add_inside(x, y);
 				break;
 			};
@@ -316,7 +316,7 @@ int main()
 			{
 				printf("\n\nInsert the position of the element you would like to delete.\n");
 				scanf("%d", &x);
-				
+
 				delete_id(x);
 				break;
 			};
@@ -325,17 +325,17 @@ int main()
 			{
 				printf("\n\nInsert the value of the element you would like to be deleted.\n");
 				scanf("%d", &x);
-				
+
 				delete_value(x);
 				break;
 			};
 
 		};
-	
+
 	}while( opt != 0);
-	
+
 	printf("\nYou left the menu. Press any key to exit.");
-	
+
 	scanf("%*c");
 	return 0;
 }

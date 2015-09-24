@@ -26,7 +26,7 @@ void show(const char *name, int level)
 		{
 			if( strcmp(source -> d_name, ".") == 0 || strcmp(source -> d_name, "..") == 0)
 				continue;
-			
+
 			int length;
 
 			char path[1000];

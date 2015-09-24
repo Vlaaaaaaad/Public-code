@@ -63,9 +63,9 @@ void initialize()
 void check(char word[])
 {
 	int length, ct = 0;
-	
+
 	length = strlen(word);
-	
+
 	while(ct <= length)
 	{
 		if(ct == 0)
@@ -78,7 +78,7 @@ void check(char word[])
 		{
 			current = current -> next[ word[ct - 1] - 'a' + 1 ];
 			ct++;
-		}	
+		}
 	}
 
 	return;

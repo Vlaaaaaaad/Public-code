@@ -1,5 +1,5 @@
 /**************************************************************************
-/ 15. You have a vector with n elements. 
+/ 15. You have a vector with n elements.
 /		Find out the minimum and the maximum value from the vector.
 /
 ***************************************************************************/
@@ -21,7 +21,7 @@ After all the splits you have just two elements. Kind of like the leaf level in 
 
 // -------------------------------------------------------------------------------------------------------------------//
 
-void minMax (int* v, int i, int j, int* min, int* max) 
+void minMax (int* v, int i, int j, int* min, int* max)
 {
 	int l_min, l_max, r_min, r_max, middle; // l_min = left_minim and r_min = right_minim
 
@@ -49,16 +49,16 @@ void minMax (int* v, int i, int j, int* min, int* max)
 		else
 		{
 			middle = (i + j) / 2;
-			
+
 			minMax(v, i, middle, &l_min, &l_max); // function for the left half
 			minMax(v, middle + 1, j, &r_min, &r_max); // function for the right half
-			
+
 			// we compare the left min with the right min
 			if(l_min < r_min)
 				*min = l_min;
 			else
 				*min = r_min;
-			
+
 			// we compare the left max with the right max
 			if(l_max > r_max)
 				*max = l_max;
