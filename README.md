@@ -5,7 +5,9 @@ I feel that these pieces of code are small and don't deserve their own repositor
 
 ###Bits and pieces of code written at Uni, available for public access
 
-**automata.c** - Buids a deterministic automata and checks if given words are accepted or not
+**automata.c** - Builds a deterministic automata and checks if given words are accepted or not
+
+**transducer.cpp** - Implements a finite state transducer with empty-transitions and tests words on the given FST. C++14.
 
 **BFS.cpp, DFS.cpp** - BFS and DFS implementation in C++
 
@@ -43,7 +45,7 @@ client program again, this time logging in as the other user and selecting readi
 - When sending a message, the client sends three things: the user's name, the word 'send' and the message itself.
 - When requesting reading of mail, the client sends two things: the user's name and the word 'read'.
 - As each message is received by the server, it is added to the appropriate mailbox (if there is room). If the mailbox is full, the message is ignored.
-- When a read request is received, the server fi rst sends an integer indicating the number of messages (possibly 0) that will be sent and then transmits the messages
+- When a read request is received, the server first sends an integer indicating the number of messages (possibly 0) that will be sent and then transmits the messages
 themselves (after which it reduces the appropriate message count to 0).
 - Each user is to be allowed to 'send' and/or 'read' as many times as he/she wishes, until he/she decides to quit.
 - When the user selects the 'quit' option, the client sends two things: the user's name and then the word 'quit'.
